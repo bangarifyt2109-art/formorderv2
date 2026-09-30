@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Form Order Undangan Website</title>
+
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+
+<!-- HEADER -->
+
+<div class="header">
+
+    <h1>Form Order Undangan Website</h1>
+
+    <p>
+        Silakan pilih kategori acara dan lengkapi data pesanan
+        dengan benar sebelum dikirim.
+    </p>
+
+</div>
+
+
+<!-- ================================
+     KATEGORI
+================================ -->
+
+<div class="card">
+
+    <div class="card-title">
+        1. Pilih Kategori Acara
+    </div>
+
+    <div class="kategori">
+
+        <div
+            class="kategori-item"
+            onclick="pilihKategori('Pernikahan', this)"
+        >
+            <span class="kategori-icon">💍</span>
+            Pernikahan
+        </div>
+
+        <div
+            class="kategori-item"
+            onclick="pilihKategori('Lamaran', this)"
+        >
+            <span class="kategori-icon">💐</span>
+            Lamaran
+        </div>
+
+        <div
+            class="kategori-item"
+            onclick="pilihKategori('Tunangan', this)"
+        >
+            <span class="kategori-icon">💎</span>
+            Tunangan
+        </div>
+
+        <div
+            class="kategori-item"
+            onclick="pilihKategori('Khitanan', this)"
+        >
+            <span class="kategori-icon">✨</span>
+            Khitanan
+        </div>
+
+        <div
+            class="kategori-item"
+            onclick="pilihKategori('Aqiqah', this)"
+        >
+            <span class="kategori-icon">👶</span>
+            Aqiqah
+        </div>
+
+        <div
+            class="kategori-item"
+            onclick="pilihKategori('Ulang Tahun', this)"
+        >
+            <span class="kategori-icon">🎂</span>
+            Ulang Tahun
+        </div>
+
+        <div
+            class="kategori-item"
+            onclick="pilihKategori('Party & Dinner', this)"
+        >
+            <span class="kategori-icon">🥂</span>
+            Party & Dinner
+        </div>
+
+        <div
+            class="kategori-item"
+            onclick="pilihKategori('Grand Opening', this)"
+        >
+            <span class="kategori-icon">🎉</span>
+            Grand Opening
+        </div>
+
+        <div
+            class="kategori-item"
+            onclick="pilihKategori('Purnabakti', this)"
+        >
+            <span class="kategori-icon">🏆</span>
+            Purnabakti
+        </div>
+
+        <div
+            class="kategori-item"
+            onclick="pilihKategori('Lainnya', this)"
+        >
+            <span class="kategori-icon">📋</span>
+            Lainnya
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================================
+     FORM
+================================ -->
+
+<div class="card">
+
+    <div class="card-title">
+        2. Isi Data Pesanan
+    </div>
+
+    <div class="selected-category">
+
+        Kategori :
+        <strong id="kategoriTerpilih">
+            Belum dipilih
+        </strong>
+
+    </div>
+
+    <div id="formDinamis">
+
+        <div class="empty-form">
+            Silakan pilih kategori acara terlebih dahulu.
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================================
+     WHATSAPP
+================================ -->
+
+<div class="card">
+
+    <div class="card-title">
+        3. Kirim Pesanan
+    </div>
+
+    <div class="info">
+
+        Pastikan semua data yang diisi sudah benar.
+        Setelah tombol ditekan, data akan otomatis
+        dibuka di WhatsApp admin.
+
+    </div>
+
+    <button
+        class="btn-wa"
+        onclick="kirimWhatsApp()"
+    >
+        💬 Kirim Pesanan via WhatsApp
+    </button>
+
+</div>
+
+
+<div class="footer">
+    © 2026 MSA Invitation
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
